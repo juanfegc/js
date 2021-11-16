@@ -56,16 +56,7 @@ const products = [
     price: '13.900000',
     name: 'Customizable mug',
   },
-]
-
-const asociations = [
-  {
-    id: '19',
-  },
-  {
-    id: '22',
-  },
-]    
+] 
 
 for (const {id: n, name: f} of products) {
   console.log('id: ' + n + ', Nombre: ' + f);
