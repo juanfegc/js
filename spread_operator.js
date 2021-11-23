@@ -3,8 +3,8 @@ function sum(x, y, z) {
   return x + y + z
 }
 
-const numbers = [1, 2, 3]
-console.log(sum(...numbers)) // expected output: 6
+const numbers1 = [1, 2, 3]
+console.log(sum(...numbers1)) // expected output: 6
 
 // Copiar arrays
 var parts = ['shoulders', 'knees']
@@ -24,7 +24,16 @@ console.log('[...arr1, ...arr2]=', arr1)
 
 console.log('[arr1, arr2]:', [arr1, arr2])
 
+//desectructurar un array para tomar elementos
+console.log('------ desectructurar array ------')
+const numbers = [1, 2, 3, 4, 5, 6]
+const [first, second, ...rest] = numbers
+console.log(first) // prints 1
+console.log(second) // prints 2
+console.log(rest) // prints [3, 4, 5, 6]
+
 //Copiar propiedades de un objeto
+console.log('------ copiar propiedades de un objeto ------')
 var obj1 = { foo: 'bar', x: 42 }
 var obj2 = { foo: 'baz', y: 13 }
 
