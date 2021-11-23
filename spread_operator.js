@@ -4,7 +4,6 @@ function sum(x, y, z) {
 }
 
 const numbers = [1, 2, 3]
-
 console.log(sum(...numbers)) // expected output: 6
 
 // Copiar arrays
@@ -18,8 +17,12 @@ arr2.push(4) // arr2 becomes [1, 2, 3, 4]
 //concatenar arrays
 var arr1 = [0, 1, 2]
 var arr2 = [3, 4, 5]
+console.log('[arr1, arr2]=', [arr1, arr2])
+
 arr1 = [...arr1, ...arr2]
-console.log(arr1)
+console.log('[...arr1, ...arr2]=', arr1)
+
+console.log('[arr1, arr2]:', [arr1, arr2])
 
 //Copiar propiedades de un objeto
 var obj1 = { foo: 'bar', x: 42 }
