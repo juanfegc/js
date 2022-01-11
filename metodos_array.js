@@ -11,6 +11,7 @@ console.log(comida)
 console.log('Filtrar comida vegetariana')
 const comida_vegetariana = comida.filter(n => n !== '🥩')
 console.log(comida_vegetariana)
+console.log('num alimentos vegetarianos:',comida.filter(n => n !== '🥩').length)
 
 //ENCONTRAR Y DEVOLVER
 const animales = ['🐻', '🐔', '🦜', '🦁', '🐺']
